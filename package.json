@@ -82,5 +82,8 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "vue-star": "0.0.4"
   }
 }

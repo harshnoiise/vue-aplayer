@@ -20,6 +20,7 @@
           <span class="aplayer-list-index">{{ index + 1}}</span>
           <span class="aplayer-list-title">{{ aMusic.title || 'Untitled' }}</span>
           <span class="aplayer-list-author">{{ aMusic.artist || 'Unknown' }}</span>
+          <span class="heart>"> <VueStar style="cursor:pointer" animate="animated bounceIn" color="#F05654"><i slot="icon" class="fa fa-heart"></i></VueStar></span>
         </li>
       </ol>
     </div>
@@ -27,7 +28,9 @@
 </template>
 
 <script>
-  export default {
+import VueStar from 'vue-star'
+export default {
+    components: {VueStar: VueStar},
     props: {
       show: {
         type: Boolean,
@@ -159,6 +162,19 @@
           flex-shrink: 0;
           color: #666;
           float: right;
+        }
+        .heart {
+          width: 100px;
+          height: 100px;
+          background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat 0 0;
+          cursor: pointer;
+          transition: background-position 1s steps(28);
+          transition-duration: 0s;
+
+          &.is-active {
+            transition-duration: 1s;
+            background-position: -2800px 0;
+          }
         }
       }
     }
