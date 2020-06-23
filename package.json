@@ -31,11 +31,7 @@
     "component",
     "vue-compoents"
   ],
-  "author": {
-    "name": "Doma",
-    "email": "leishenghao@126.com",
-    "url": "https://github.com/SevenOutman"
-  },
+  "author": "Doma <leishenghao@126.com> (https://github.com/SevenOutman)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SevenOutman/vue-aplayer/issues"
@@ -85,5 +81,8 @@
   },
   "dependencies": {
     "vue-star": "0.0.4"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
